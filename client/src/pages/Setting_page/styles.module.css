@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@100&display=swap');
+.form_container {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+
+}
+.layout{
+    z-index: 1;
+}
+
+
+
+

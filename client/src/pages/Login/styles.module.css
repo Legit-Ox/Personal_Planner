@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@100&display=swap');
+
+
+.form_container {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.left {
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+}
+
+.img {
+    width:40%;
+    position: absolute;
+    left: 26%;
+    top: 25%;
+    
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.from_heading {
+    font-size: 25px;
+    font-weight: 1000;
+    color: #2c444e;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.form_sub_heading{
+    font-size: 14px;
+}
+
+.input {
+    width: 320px;
+    height: 35px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 0px;
+    background-color: rgba(173, 173, 173, 0.422);
+    margin: 5px 0;
+    outline: none;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 25px;
+    color: white;
+    background-color: #00cec9;
+    border-radius: 12px;
+    width: 335px;
+    margin: 20px 0 0 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    font-size: 14px;
+    color: black    ;
+    margin: 5px 0;
+    padding: 0;
+    font-weight: 1000;
+}
+
+.text > a{
+    font-size: 16px;
+    font-weight: 1000;
+    color: blue;
+}
+
+.google_btn {
+    width: 335px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+    color: #2c444e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.google_btn > img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.google_btn > span{
+    margin-left: 10px;
+}
+.signuplink{
+    font-weight: 1000;
+    margin-left: 110px;
+}
