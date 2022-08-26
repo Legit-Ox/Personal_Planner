@@ -6,11 +6,28 @@
     width: 100vw;
     height: 100vh;
     background-color: white;
-
 }
+
 .layout{
     z-index: 1;
 }
+.main_heading{
+    font-weight: 1000;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+.date{
+    height: max-content;
+    margin-top: 20px;
+    right: 20px;    
+    position: absolute;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
 
 
 

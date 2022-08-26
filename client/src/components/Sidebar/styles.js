@@ -39,7 +39,7 @@ export const SLogo = styled.div`
   }
   cursor: pointer;
 
-  margin-top: 75px;
+  margin-top: 0px;
 `;
 
 export const SSearch = styled.div`

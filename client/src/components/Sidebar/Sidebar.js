@@ -110,9 +110,13 @@ const Sidebar = (userDetails) => {
           <SToggleThumb style={theme === "dark" ? { right: "1px" } : {}} />
         </SThemeToggler>
       </STheme>
-      <SLogo>
-        <Simg src={user.picture}></Simg>
-      </SLogo>
+      <SDivider />
+      <STheme>
+        {sidebarOpen && <SThemeLabel>{user.name}</SThemeLabel>}
+        <SLogo>
+          <Simg src={user.picture === "undefined" ? " " : user.picture}></Simg>
+        </SLogo>
+      </STheme>
     </SSidebar>
   );
 };

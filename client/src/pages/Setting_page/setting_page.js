@@ -8,7 +8,7 @@ function Settings(userDetails) {
       <div className={styles.container}>
         <div className={styles.form_container}>
           <Layout user={user} className="layout"></Layout>
-          <h1>Settings</h1>
+          <div className={styles.main_heading}>Settings</div>
         </div>
       </div>
     </>

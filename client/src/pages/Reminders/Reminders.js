@@ -9,7 +9,7 @@ function Reminders(userDetails) {
       <div className={styles.container}>
         <div className={styles.form_container}>
           <Layout user={user} className="layout"></Layout>
-          <h1>Reminders</h1>
+          <div className={styles.main_heading}>Reminders</div>
         </div>
       </div>
     </>

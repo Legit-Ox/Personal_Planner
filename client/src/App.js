@@ -9,9 +9,10 @@ import axios from "axios";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
+
 import Tasks from "./pages/Tasks/Tasks";
 import Reminders from "./pages/Reminders/Reminders";
-import Notes from "./pages/Notes/Notes";
+import NoteMain from "./pages/Notes/Notemain/NoteMain";
 import Settings from "./pages/Setting_page/setting_page";
 import "./App.css";
 export const ThemeContext = React.createContext(null);
@@ -75,7 +76,7 @@ function App() {
             <Route
               exact
               path="/notes"
-              element={user ? <Notes user={user} /> : <Navigate to="/" />}
+              element={user ? <NoteMain user={user} /> : <Navigate to="/" />}
             />
             <Route
               exact

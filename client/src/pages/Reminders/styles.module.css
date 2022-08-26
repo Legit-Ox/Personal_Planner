@@ -11,6 +11,13 @@
 .layout{
     z-index: 1;
 }
+.main_heading{
+    font-weight: 1000;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
 
 
 
