@@ -31,7 +31,6 @@ import { BiAlarmAdd } from "react-icons/bi";
 import { MdLogout } from "react-icons/md";
 import { ThemeContext } from "../../App";
 import { useLocation } from "react-router-dom";
-
 const logout = () => {
   window.open(`${process.env.REACT_APP_API_URL}/auth/logout`, "_self");
 };

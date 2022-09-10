@@ -49,47 +49,47 @@ function App() {
             rel="stylesheet"
           />
         </Helmet>
-        <div className="container">
-          <Routes>
-            <Route
-              exact
-              path="/"
-              element={
-                user ? <Dashboard user={user} /> : <Navigate to="/login" />
-              }
-            />
-            <Route
-              exact
-              path="/login"
-              element={user ? <Navigate to="/" /> : <Login />}
-            />
-            <Route
-              path="/signup"
-              element={user ? <Navigate to="/" /> : <Signup />}
-            />
+        {/* <div className="container"> */}
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              user ? <Dashboard user={user} /> : <Navigate to="/login" />
+            }
+          />
+          <Route
+            exact
+            path="/login"
+            element={user ? <Navigate to="/" /> : <Login />}
+          />
+          <Route
+            path="/signup"
+            element={user ? <Navigate to="/" /> : <Signup />}
+          />
 
-            <Route
-              exact
-              path="/tasks"
-              element={user ? <Tasks user={user} /> : <Navigate to="/login" />}
-            />
-            <Route
-              exact
-              path="/notes"
-              element={user ? <NoteMain user={user} /> : <Navigate to="/" />}
-            />
-            <Route
-              exact
-              path="/reminders"
-              element={user ? <Reminders user={user} /> : <Navigate to="/" />}
-            />
-            <Route
-              exact
-              path="/settings"
-              element={user ? <Settings user={user} /> : <Navigate to="/" />}
-            />
-          </Routes>
-        </div>
+          <Route
+            exact
+            path="/tasks"
+            element={user ? <Tasks user={user} /> : <Navigate to="/login" />}
+          />
+          <Route
+            exact
+            path="/notes"
+            element={user ? <NoteMain user={user} /> : <Navigate to="/" />}
+          />
+          <Route
+            exact
+            path="/reminders"
+            element={user ? <Reminders user={user} /> : <Navigate to="/" />}
+          />
+          <Route
+            exact
+            path="/settings"
+            element={user ? <Settings user={user} /> : <Navigate to="/" />}
+          />
+        </Routes>
+        {/* </div> */}
       </ThemeProvider>
     </ThemeContext.Provider>
   );

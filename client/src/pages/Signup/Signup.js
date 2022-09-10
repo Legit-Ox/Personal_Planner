@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-
 function Signup() {
   const googleAuth = () => {
     window.open(
