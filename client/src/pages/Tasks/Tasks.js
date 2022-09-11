@@ -43,10 +43,10 @@ export default function Tasks(userDetails) {
         <div className={styles.main_heading}>Tasks</div>
         <div className={styles.kanban}>
           <Board
+            style={{ backgroundColor: "white" }}
             data={data}
             editable
             canAddLanes
-            styles={{ backgroundColor: "red" }}
           />
         </div>
       </div>
