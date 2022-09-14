@@ -3,7 +3,7 @@ import { CalendarContext, sameDay } from "./CalendarContext";
 import { contrast } from "./utils";
 import Task from "./Task";
 import "./rem.css";
-
+    
 function Day({ day, date }) {
   const { setTask, setDate } = useContext(CalendarContext);
 

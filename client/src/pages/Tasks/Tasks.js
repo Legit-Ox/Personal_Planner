@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import React, { Component } from "react";
 import Layout from "../../components/Layout/Layout";
 import Board from "react-trello";
+import { GlobalStyle } from "../../styles/globalStyles";
 const data = {
   lanes: [
     {
@@ -33,6 +34,9 @@ const data = {
     },
   ],
 };
+const components = {
+  GlobalStyle,
+};
 export default function Tasks(userDetails) {
   const user = userDetails.user;
 
@@ -47,6 +51,7 @@ export default function Tasks(userDetails) {
             data={data}
             editable
             canAddLanes
+            components={components}
           />
         </div>
       </div>
